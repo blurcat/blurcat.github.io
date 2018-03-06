@@ -314,6 +314,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -344,7 +366,7 @@
         
           
             <h4 id="1-安装前装备"><a href="#1-安装前装备" class="headerlink" title="1.安装前装备"></a>1.安装前装备</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++  </span><br><span class="line">yum install pcre pcre-devel  </span><br><span class="line">yum install zlib zlib-devel  </span><br><span class="line">yum install openssl openssl--devel</span><br></pre></td></tr></table></figure>
-<h4 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /usr/local/nginx     </span><br><span class="line">#创建一个安装目录</span><br><span class="line">cd /usr/local/nginx           </span><br><span class="line">#切换到创建好的目录</span><br><span class="line">wget http://nginx.org/download/nginx-1.10.3.tar.gz   </span><br><span class="line">#下载安装包</span><br><span class="line">tar -zxvf nginx-1.10.3.tar.gz         </span><br><span class="line">#解压</span><br><span class="line">cd nginx-1.10.3                      </span><br><span class="line">#到解压目录下编译</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-pcre --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-http_realip_module    </span><br><span class="line">#编译</span><br><span class="line">make &amp;&amp; make install         </span><br><span class="line">#安装</span><br></pre></td></tr></table></figure>
+<h4 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /usr/local/nginx     </span><br><span class="line">#创建一个安装目录</span><br><span class="line">cd /usr/local/nginx     </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">#切换到创建好的目录</span><br><span class="line">wget http://nginx.org/download/nginx-1.10.3.tar.gz   </span><br><span class="line">#下载安装包</span><br><span class="line">tar -zxvf nginx-1.10.3.tar.gz         </span><br><span class="line">#解压</span><br><span class="line">cd nginx-1.10.3                      </span><br><span class="line">#到解压目录下编译</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-pcre --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-http_realip_module    </span><br><span class="line">#编译</span><br><span class="line">make &amp;&amp; make install         </span><br><span class="line">#安装</span><br></pre></td></tr></table></figure>
 <blockquote>
 <ul>
 <li>在编译的时候可能遇到以下报错：</li>
@@ -587,7 +609,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
