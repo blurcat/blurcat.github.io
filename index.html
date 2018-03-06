@@ -239,16 +239,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -268,136 +258,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://m2learn.com/2018/03/06/简单统计nginx访问量/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bluecat">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bluecat's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/06/简单统计nginx访问量/" itemprop="url">��ͳ��nginx������</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T09:47:48+08:00">
-                2018-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1.���ݷ���IPͳ��UV</p>
-<p>awk ‘{print $1}’  access.log|sort | uniq -c |wc -l</p>
-<p>2.ͳ�Ʒ���URLͳ��PV</p>
-<p>awk ‘{print $7}’ access.log|wc -l</p>
-<p>3.��ѯ������Ƶ����URL</p>
-<p>awk ‘{print $7}’ access.log|sort | uniq -c |sort -n -k 1 -r|more</p>
-<p>4.��ѯ������Ƶ����IP</p>
-<p>awk ‘{print $1}’ access.log|sort | uniq -c |sort -n -k 1 -r|more</p>
-<p>5.����ʱ���ͳ�Ʋ鿴��־</p>
-<p> cat  access.log| sed -n ‘/14\/Mar\/2015:21/,/14\/Mar\/2015:22/p’|more</p>
-<p>ʱ���pv<br>cat  access.log| sed -n ‘/20\/Feb\/2017:14/,/20\/Feb\/2017:16/p’| awk ‘{print $7}’ |sort | uniq -c| wc -l<br>ʱ���uv<br>cat  access.log| sed -n ‘/20\/Feb\/2017:14/,/20\/Feb\/2017:16/p’| awk ‘{print $7}’ |sort | uniq -c| wc -l </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
     
       
 
@@ -573,7 +433,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
