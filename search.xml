@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[centos7.x搭建git服务器]]></title>
+    <url>%2F2018%2F03%2F13%2Fcentos7.x%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。1.安装依赖库和编译工具1yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 2.安装编译工具1yum install gcc perl-ExtUtils-MakeMaker 3.下载git并安装选一个目录，用来放下载下来的安装包，这里将安装包放在 /usr/local/src 目录里,到官网找一个新版稳定的源码包。123456cd /usr/local/srcwget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gztar -zvxf git-2.10.0.tar.gz #解压cd git-2.10.0 make all prefix=/usr/local/git #执行编译make install prefix=/usr/local/git #编译完成后, 安装到 /usr/local/git 目录下 4.配置环境变量将git目录加入PATH123echo &apos;export PATH=$PATH:/usr/local/git/bin&apos; &gt;&gt; /etc/bashrc #将原来的 PATH 指向目录修改为现在的目录source /etc/bashrc #生效环境变量git --version #查看到版本号说明安装成功 5.创建 git 账号密码12useradd -m gituserpasswd gituser #控制台输入创建密码后，输入您自定义的密码，并二次确认。 6.初始化 git 仓库并配置用户权限12mkdir -p /data/repositories #创建 /data/repositories 目录用于存放 git 仓库cd /data/repositories/ &amp;&amp; git init --bare test.git #创建好后，初始化这个仓库 给 git 仓库目录设置用户和用户组并设置权限 12chown -R gituser:gituser /data/repositorieschmod 755 /data/repositories 查找 git-shell 所在目录 , 编辑 /etc/passwd 文件，将最后一行关于 gituser 的登录 shell 配置改为 git-shell 的目录，出于安全考虑, 限制 git 账号的 ssh 连接只能是登录 git-shell。 把gituser:x:1000:1000::/home/gituser:/bin/bash改成gituser:x:1000:1000::/home/gituser:/usr/local/git/bin/git-shell 7.测试搭建好的Git服务1git clone gituser@服务器ip:/data/repositories/test.git 由于cmd markdown 需要升级会员才能上传本地图片，所以我的一些截图没法上传，看不明白的可以留言讨论。]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>git服务器搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[使用hexo搭建自己的blog]]></title>
     <url>%2F2018%2F03%2F06%2F%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog%2F</url>
     <content type="text"><![CDATA[1.创建GitHub账号2.安装git3.安装hexo4.本地配置测试5.发布到GitHub仓库6.主题配置7.添加评论系统 这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。]]></content>
