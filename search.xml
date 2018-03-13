@@ -12,7 +12,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[使用hexo搭建自己的blog]]></title>
+    <title><![CDATA[使用hexo + GitHub pages搭建自己的blog]]></title>
     <url>%2F2018%2F03%2F06%2F%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog%2F</url>
     <content type="text"><![CDATA[1.创建GitHub账号2.安装git3.安装hexo4.本地配置测试5.发布到GitHub仓库6.主题配置7.添加评论系统 这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。]]></content>
       <categories>

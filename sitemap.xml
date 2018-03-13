@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://m2learn.com/2018/03/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog/</loc>
+    
+    <lastmod>2018-03-13T06:43:38.262Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://m2learn.com/2018/03/13/centos7.x%E6%90%AD%E5%BB%BAgit%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2018-03-13T05:14:17.822Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://m2learn.com/tags/index.html</loc>
     
     <lastmod>2018-03-08T07:45:13.086Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://m2learn.com/2018/03/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog/</loc>
-    
-    <lastmod>2018-03-06T08:41:08.022Z</lastmod>
     
   </url>
   
