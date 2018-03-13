@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://m2learn.com/"/>
-  <updated>2018-03-13T05:14:17.822Z</updated>
+  <updated>2018-03-13T08:41:25.980Z</updated>
   <id>http://m2learn.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用hexo + GitHub pages搭建自己的blog</title>
+    <link href="http://m2learn.com/2018/03/13/1.%E6%B3%A8%E5%86%8CGitHub%E8%B4%A6%E5%8F%B7%E5%B9%B6%E6%96%B0%E5%BB%BA%E5%BA%93/"/>
+    <id>http://m2learn.com/2018/03/13/1.注册GitHub账号并新建库/</id>
+    <published>2018-03-13T08:41:25.733Z</published>
+    <updated>2018-03-13T08:41:25.980Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-注册GitHub账号并新建库"><a href="#1-注册GitHub账号并新建库" class="headerlink" title="1.注册GitHub账号并新建库"></a>1.注册GitHub账号并新建库</h3><p>![]<br><a href="http://i2.51cto.com/images/blog/201803/13/c966445efd429c2bf65588d6577f9d8a.jpg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=" target="_blank" rel="noopener">http://i2.51cto.com/images/blog/201803/13/c966445efd429c2bf65588d6577f9d8a.jpg?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=</a></p><h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><h3 id="4-本地配置测试"><a href="#4-本地配置测试" class="headerlink" title="4.本地配置测试"></a>4.本地配置测试</h3><h3 id="5-发布到GitHub仓库"><a href="#5-发布到GitHub仓库" class="headerlink" title="5.发布到GitHub仓库"></a>5.发布到GitHub仓库</h3><h3 id="6-主题配置"><a href="#6-主题配置" class="headerlink" title="6.主题配置"></a>6.主题配置</h3><h3 id="7-添加评论系统"><a href="#7-添加评论系统" class="headerlink" title="7.添加评论系统"></a>7.添加评论系统</h3><blockquote><ul><li>这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。</li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-注册GitHub账号并新建库&quot;&gt;&lt;a href=&quot;#1-注册GitHub账号并新建库&quot; class=&quot;headerlink&quot; title=&quot;1.注册GitHub账号并新建库&quot;&gt;&lt;/a&gt;1.注册GitHub账号并新建库&lt;/h3&gt;&lt;p&gt;![]&lt;br&gt;&lt;a href
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://m2learn.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="搭建blog" scheme="http://m2learn.com/tags/%E6%90%AD%E5%BB%BAblog/"/>
+    
+  </entry>
   
   <entry>
     <title>centos7.x搭建git服务器</title>
@@ -43,8 +68,8 @@
   
   <entry>
     <title>使用hexo + GitHub pages搭建自己的blog</title>
-    <link href="http://m2learn.com/2018/03/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog/"/>
-    <id>http://m2learn.com/2018/03/06/使用hexo搭建自己的blog/</id>
+    <link href="http://m2learn.com/2018/03/06/1%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84blog/"/>
+    <id>http://m2learn.com/2018/03/06/1使用hexo搭建自己的blog/</id>
     <published>2018-03-06T08:41:07.767Z</published>
     <updated>2018-03-13T06:43:38.262Z</updated>
     
