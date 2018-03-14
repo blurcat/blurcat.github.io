@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title><![CDATA[使用hexo + GitHub pages搭建自己的blog]]></title>
-    <url>%2F2018%2F03%2F13%2Fhexo2%2F</url>
-    <content type="text"><![CDATA[1.注册GitHub账号并新建库 如果还没有GitHub账号的话，先注册一个。 登录之后创建一个新的库 注意库名要设置成你的GitHub名.github.io不然解析的时候可能有问题 在setting里设置一下域名和GitHub pages 解析域名到yourname.github.io,我的域名是在阿里买的 2.安装git 可到git官网https://git-scm.com/下载安装包 具体的安装步骤就不详细列出了，去百度一下Windows上安装git，会有一堆安装步骤教程。git安装完成之后就可以正式安装hexo了。 3.安装hexo4.本地配置测试5.发布到GitHub仓库6.主题配置7.添加评论系统 这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。]]></content>
+    <url>%2F2018%2F03%2F14%2Fhexo3%2F</url>
+    <content type="text"><![CDATA[1.注册GitHub账号并新建库 如果还没有GitHub账号的话，先到GitHub官网注册一个。 登录之后创建一个新的库 注意库名要设置成你的GitHub名.github.io不然解析的时候可能有问题 在setting里设置一下域名和GitHub pages 解析域名到yourname.github.io,我的域名是在阿里买的 2.安装git 可到git官网https://git-scm.com/下载安装包 安装完成之后打开cmd，输入git --version,能显示git版本信息的话就说明git安装成功了。如果没显示，可能是没有设置环境变量。 具体的安装步骤就不详细列出了，去百度一下Windows上安装git，会有一堆安装步骤教程。git安装完成之后就可以正式安装hexo了。 3.安装hexo 安装前提到node.js官网下载安装包 4.本地配置测试5.发布到GitHub仓库6.主题配置7.添加评论系统 这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。]]></content>
       <categories>
         <category>技术</category>
       </categories>
