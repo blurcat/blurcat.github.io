@@ -136,7 +136,9 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/11003935-4b2f1b8637141a4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/11003935-fb2ccf92158498d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/11003935-c7e90ca1635955f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-23T01:51:44.706Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/11003935-fbe20e401a569bdb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/11003935-38c4e14b41cd26c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-03-23T02:26:25.941Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo + GitHub pages搭建自己的blog">
 <meta name="twitter:description" content="注册GitHub账号并新建库 如果还没有GitHub账号的话，先到GitHub官网注册一个。  登录之后创建一个新的库  注意库名要设置成你的GitHub名.github.io不然解析的时候可能有问题  在setting里设置一下域名和GitHub pages  解析域名到yourname.github.io,我的域名是在阿里买的   安装git 可到git官网下载安装包  安装完成之后打开cmd">
@@ -445,7 +447,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,597
+                  1,722
                 </span>
               
 
@@ -461,7 +463,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  7
                 </span>
               
             </div>
@@ -566,7 +568,13 @@
 <p><img src="https://upload-images.jianshu.io/upload_images/11003935-c7e90ca1635955f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>效果在文章末尾可以看到，可以评论测试！</p>
 <h3 id="启用分享功能"><a href="#启用分享功能" class="headerlink" title="启用分享功能"></a>启用分享功能</h3><p>打开主题配置文件_config.yml，搜索<code>jiathis</code>参数，把<code>jiathis: false</code>改成<code>jiathis: true</code>即可。</p>
-<h3 id="发布到GitHub仓库"><a href="#发布到GitHub仓库" class="headerlink" title="发布到GitHub仓库"></a>发布到GitHub仓库</h3><blockquote>
+<h3 id="部署到GitHub仓库"><a href="#部署到GitHub仓库" class="headerlink" title="部署到GitHub仓库"></a>部署到GitHub仓库</h3><p>打开站点配置文件_config.yml,在最后一行配置一下部署方式，如下图所示。</p>
+<p>修改前<br><img src="https://upload-images.jianshu.io/upload_images/11003935-fbe20e401a569bdb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>修改后<br><img src="https://upload-images.jianshu.io/upload_images/11003935-38c4e14b41cd26c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>之前已经把生成的ssh公钥添加到GitHub了，所以一会儿提交的时候不用输入密码。在站点目录下打开git bash终端执行下面命令部署到GitHub。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d         #部署</span><br></pre></td></tr></table></figure>
+<p>然后访问做好解析的域名就能看到自己的博客了。我的博客域名<a href="http://m2learn.club" target="_blank" rel="noopener">http://m2learn.club</a></p>
+<blockquote>
 <ul>
 <li>这个博客就是这样搭建起来的，还没有时间整理更新，后续会继续更新的，现在先列一个框架出来。</li>
 </ul>
@@ -846,7 +854,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账号并新建库"><span class="nav-number">1.</span> <span class="nav-text">注册GitHub账号并新建库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">3.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">4.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题配置"><span class="nav-number">5.</span> <span class="nav-text">主题配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加评论功能"><span class="nav-number">6.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用分享功能"><span class="nav-number">7.</span> <span class="nav-text">启用分享功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布到GitHub仓库"><span class="nav-number">8.</span> <span class="nav-text">发布到GitHub仓库</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账号并新建库"><span class="nav-number">1.</span> <span class="nav-text">注册GitHub账号并新建库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">3.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">4.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题配置"><span class="nav-number">5.</span> <span class="nav-text">主题配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加评论功能"><span class="nav-number">6.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用分享功能"><span class="nav-number">7.</span> <span class="nav-text">启用分享功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub仓库"><span class="nav-number">8.</span> <span class="nav-text">部署到GitHub仓库</span></a></li></ol></div>
             
 
           </div>
@@ -880,7 +888,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">站点总字数&#58;</span>
     
-    <span title="站点总字数">2.8k</span>
+    <span title="站点总字数">2.9k</span>
   
 </div>
 
