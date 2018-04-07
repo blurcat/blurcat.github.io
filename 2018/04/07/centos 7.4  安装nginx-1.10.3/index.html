@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="搭建git服务器," />
+  <meta name="keywords" content="安装nginx," />
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。1.安装依赖库和编译工具1yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 2.安装编译工具1yum install gcc perl-ExtUtils-MakeMaker 3.下载git并安装选一个目录，用来放下载下">
-<meta name="keywords" content="搭建git服务器">
+<meta name="description" content="安装前装备1234yum install gcc-c++  yum install pcre pcre-devel  yum install zlib zlib-devel  yum install openssl openssl--devel 安装1234567891011121314mkdir -p /usr/local/nginx     #创建一个安装目录cd /usr/local/ngi">
+<meta name="keywords" content="安装nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="centos7.x搭建git服务器">
-<meta property="og:url" content="http://m2learn.com/2018/03/13/centos7.x搭建git服务器搭建/index.html">
+<meta property="og:title" content="centos 7.4  安装nginx-1.10.3">
+<meta property="og:url" content="http://m2learn.com/2018/04/07/centos 7.4  安装nginx-1.10.3/index.html">
 <meta property="og:site_name" content="bluecat&#39;s blog">
-<meta property="og:description" content="Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。1.安装依赖库和编译工具1yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 2.安装编译工具1yum install gcc perl-ExtUtils-MakeMaker 3.下载git并安装选一个目录，用来放下载下">
+<meta property="og:description" content="安装前装备1234yum install gcc-c++  yum install pcre pcre-devel  yum install zlib zlib-devel  yum install openssl openssl--devel 安装1234567891011121314mkdir -p /usr/local/nginx     #创建一个安装目录cd /usr/local/ngi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-26T00:59:11.549Z">
+<meta property="og:updated_time" content="2018-03-26T00:59:22.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="centos7.x搭建git服务器">
-<meta name="twitter:description" content="Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。1.安装依赖库和编译工具1yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 2.安装编译工具1yum install gcc perl-ExtUtils-MakeMaker 3.下载git并安装选一个目录，用来放下载下">
+<meta name="twitter:title" content="centos 7.4  安装nginx-1.10.3">
+<meta name="twitter:description" content="安装前装备1234yum install gcc-c++  yum install pcre pcre-devel  yum install zlib zlib-devel  yum install openssl openssl--devel 安装1234567891011121314mkdir -p /usr/local/nginx     #创建一个安装目录cd /usr/local/ngi">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://m2learn.com/2018/03/13/centos7.x搭建git服务器搭建/"/>
+  <link rel="canonical" href="http://m2learn.com/2018/04/07/centos 7.4  安装nginx-1.10.3/"/>
 
 
 
 
 
-  <title>centos7.x搭建git服务器 | bluecat's blog</title>
+  <title>centos 7.4  安装nginx-1.10.3 | bluecat's blog</title>
   
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://m2learn.com/2018/03/13/centos7.x搭建git服务器搭建/">
+    <link itemprop="mainEntityOfPage" href="http://m2learn.com/2018/04/07/centos 7.4  安装nginx-1.10.3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bluecat">
@@ -333,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">centos7.x搭建git服务器</h1>
+          <h1 class="post-title" itemprop="name headline">centos 7.4  安装nginx-1.10.3</h1>
         
 
         <div class="post-meta">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T13:14:17+08:00">
-                2018-03-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T11:12:10+08:00">
+                2018-04-07
               </time>
             
 
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  525
+                  612
                 </span>
               
 
@@ -420,7 +420,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -441,23 +441,34 @@
       
 
       
-        <h4 id="Git-是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。"><a href="#Git-是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。" class="headerlink" title="Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。"></a>Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</h4><h5 id="1-安装依赖库和编译工具"><a href="#1-安装依赖库和编译工具" class="headerlink" title="1.安装依赖库和编译工具"></a>1.安装依赖库和编译工具</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel</span><br></pre></td></tr></table></figure>
-<h4 id="2-安装编译工具"><a href="#2-安装编译工具" class="headerlink" title="2.安装编译工具"></a>2.安装编译工具</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc perl-ExtUtils-MakeMaker</span><br></pre></td></tr></table></figure>
-<h4 id="3-下载git并安装"><a href="#3-下载git并安装" class="headerlink" title="3.下载git并安装"></a>3.下载git并安装</h4><p>选一个目录，用来放下载下来的安装包，这里将安装包放在 /usr/local/src 目录里,到官网找一个新版稳定的源码包。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz</span><br><span class="line">tar -zvxf git-2.10.0.tar.gz    #解压</span><br><span class="line">cd git-2.10.0               </span><br><span class="line">make all prefix=/usr/local/git        #执行编译</span><br><span class="line">make install prefix=/usr/local/git   #编译完成后, 安装到 /usr/local/git 目录下</span><br></pre></td></tr></table></figure></p>
-<h4 id="4-配置环境变量"><a href="#4-配置环境变量" class="headerlink" title="4.配置环境变量"></a>4.配置环境变量</h4><p>将git目录加入PATH<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;export PATH=$PATH:/usr/local/git/bin&apos; &gt;&gt; /etc/bashrc     #将原来的 PATH 指向目录修改为现在的目录</span><br><span class="line">source /etc/bashrc      #生效环境变量</span><br><span class="line">git --version           #查看到版本号说明安装成功</span><br></pre></td></tr></table></figure></p>
-<h4 id="5-创建-git-账号密码"><a href="#5-创建-git-账号密码" class="headerlink" title="5.创建 git 账号密码"></a>5.创建 git 账号密码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd -m gituser</span><br><span class="line">passwd gituser    #控制台输入创建密码后，输入您自定义的密码，并二次确认。</span><br></pre></td></tr></table></figure>
-<h4 id="6-初始化-git-仓库并配置用户权限"><a href="#6-初始化-git-仓库并配置用户权限" class="headerlink" title="6.初始化 git 仓库并配置用户权限"></a>6.初始化 git 仓库并配置用户权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/repositories    #创建 /data/repositories 目录用于存放 git 仓库</span><br><span class="line">cd /data/repositories/ &amp;&amp; git init --bare test.git    #创建好后，初始化这个仓库</span><br></pre></td></tr></table></figure>
-<p>给 git 仓库目录设置用户和用户组并设置权限</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chown -R gituser:gituser /data/repositories</span><br><span class="line">chmod 755 /data/repositories</span><br></pre></td></tr></table></figure>
-<p>查找 git-shell 所在目录 , 编辑 /etc/passwd 文件，将最后一行关于 gituser 的登录 shell 配置改为 git-shell 的目录，出于安全考虑, 限制 git 账号的 ssh 连接只能是登录 git-shell。</p>
+        <h4 id="安装前装备"><a href="#安装前装备" class="headerlink" title="安装前装备"></a>安装前装备</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++  </span><br><span class="line">yum install pcre pcre-devel  </span><br><span class="line">yum install zlib zlib-devel  </span><br><span class="line">yum install openssl openssl--devel</span><br></pre></td></tr></table></figure>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /usr/local/nginx     </span><br><span class="line">#创建一个安装目录</span><br><span class="line">cd /usr/local/nginx    </span><br><span class="line">#切换到创建好的目录</span><br><span class="line">wget http://nginx.org/download/nginx-1.10.3.tar.gz   </span><br><span class="line">#下载安装包</span><br><span class="line">tar -zxvf nginx-1.10.3.tar.gz         </span><br><span class="line">#解压</span><br><span class="line">cd nginx-1.10.3                      </span><br><span class="line">#到解压目录下编译</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-pcre --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-http_realip_module    </span><br><span class="line">#编译</span><br><span class="line">make &amp;&amp; make install         </span><br><span class="line">#安装</span><br></pre></td></tr></table></figure>
 <blockquote>
 <ul>
-<li>把gituser:x:1000:1000::/home/gituser:/bin/bash改成gituser:x:1000:1000::/home/gituser:/usr/local/git/bin/git-shell</li>
+<li>在编译的时候可能遇到以下报错：</li>
 </ul>
 </blockquote>
-<h4 id="7-测试搭建好的Git服务"><a href="#7-测试搭建好的Git服务" class="headerlink" title="7.测试搭建好的Git服务"></a>7.测试搭建好的Git服务</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone gituser@服务器ip:/data/repositories/test.git</span><br></pre></td></tr></table></figure>
-<hr>
-<p>由于cmd markdown 需要升级会员才能上传本地图片，所以我的一些截图没法上传，看不明白的可以留言讨论。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/configure: error: the HTTP rewrite module requires the PCRE library.You can either disable the module by using --without-http_rewrite_module option, or install the PCRE library into the system, or build the PCRE library statically from the source with nginx by using --with-pcre=&lt;path&gt; option.         </span><br><span class="line">#没有安装pcre-devel</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./configure: error: SSL modules require the OpenSSL library. You can either do not enable the modules, or install the OpenSSL library into the system, or build the OpenSSL library statically from the source with nginx by using --with-openssl=&lt;path&gt; option     </span><br><span class="line">#没有安装openssl-devel</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>针对上诉的报错情况，执行下面的安装命令，然后就可以正常编译<br>yum -y install pcre-devel openssl openssl-devel</li>
+</ul>
+</blockquote>
+<h4 id="把Nginx添加成系统服务"><a href="#把Nginx添加成系统服务" class="headerlink" title="把Nginx添加成系统服务"></a>把Nginx添加成系统服务</h4><p>vim /etc/init.d/nginx<br>在/etc/init.d下创建一个nginx文件，并输入以下代码:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">! /bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> chkconfig: - 85 15</span></span><br><span class="line">PATH=/usr/local/nginx          #Nginx的安装路径</span><br><span class="line">DESC="nginx daemon"</span><br><span class="line">NAME=nginx</span><br><span class="line">DAEMON=$PATH/sbin/$NAME</span><br><span class="line">CONFIGFILE=$PATH/conf/$NAME.conf</span><br><span class="line">PIDFILE=$PATH/logs/$NAME.pid</span><br><span class="line">SCRIPTNAME=/etc/init.d/$NAME</span><br><span class="line">set -e</span><br><span class="line">[ -x "$DAEMON" ] || exit 0</span><br><span class="line">do_start() &#123;</span><br><span class="line"><span class="meta">$</span><span class="bash">DAEMON -c <span class="variable">$CONFIGFILE</span> || <span class="built_in">echo</span> -n <span class="string">"nginx already running"</span></span></span><br><span class="line">&#125;</span><br><span class="line">do_stop() &#123;</span><br><span class="line"><span class="meta">$</span><span class="bash">DAEMON -s stop || <span class="built_in">echo</span> -n <span class="string">"nginx not running"</span></span></span><br><span class="line">&#125;</span><br><span class="line">do_reload() &#123;</span><br><span class="line"><span class="meta">$</span><span class="bash">DAEMON -s reload || <span class="built_in">echo</span> -n <span class="string">"nginx can't reload"</span></span></span><br><span class="line">&#125;</span><br><span class="line">case "$1" in</span><br><span class="line">start)</span><br><span class="line">echo -n "Starting $DESC: $NAME"</span><br><span class="line">do_start</span><br><span class="line">echo "."</span><br><span class="line">;;</span><br><span class="line">stop)</span><br><span class="line">echo -n "Stopping $DESC: $NAME"</span><br><span class="line">do_stop</span><br><span class="line">echo "."</span><br><span class="line">;;</span><br><span class="line">reload|graceful)</span><br><span class="line">echo -n "Reloading $DESC configuration..."</span><br><span class="line">do_reload</span><br><span class="line">echo "."</span><br><span class="line">;;</span><br><span class="line">restart)</span><br><span class="line">echo -n "Restarting $DESC: $NAME"</span><br><span class="line">do_stop</span><br><span class="line">do_start</span><br><span class="line">echo "."</span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line">echo "Usage: $SCRIPTNAME &#123;start|stop|reload|restart&#125;" &gt;&amp;2</span><br><span class="line">exit 3</span><br><span class="line">;;</span><br><span class="line">esac</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>然后执行下面命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x /etc/init.d/nginx       #给执行权限</span><br><span class="line">chkconfig --add nginx             #注册成服务 </span><br><span class="line">chkconfig nginx on                #设置开机启动</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>添加成系统服务之后可以使用以下命令控制Nginx服务</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx.service        #启动nginx服务</span><br><span class="line">systemctl stop nginx.service         #停止nginx服务</span><br><span class="line">systemctl restart nginx.service      #重启nginx服务</span><br><span class="line">systemctl reload nginx.service       #重新读取nginx配置(这个最常用, 不用停止nginx服务就能使修改的配置生效)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -507,7 +518,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://m2learn.com/2018/03/13/centos7.x搭建git服务器搭建/" title="centos7.x搭建git服务器">http://m2learn.com/2018/03/13/centos7.x搭建git服务器搭建/</a>
+    <a href="http://m2learn.com/2018/04/07/centos 7.4  安装nginx-1.10.3/" title="centos 7.4  安装nginx-1.10.3">http://m2learn.com/2018/04/07/centos 7.4  安装nginx-1.10.3/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -522,7 +533,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/搭建git服务器/" <i class="fa fa-tag"></i> 搭建git服务器</a>
+            <a href="/tags/安装nginx/" <i class="fa fa-tag"></i> 安装nginx</a>
           
         </div>
       
@@ -535,18 +546,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/06/centos 7.4  安装nginx-1.10.3/" rel="next" title="centos 7.4  安装nginx-1.10.3">
-                <i class="fa fa-chevron-left"></i> centos 7.4  安装nginx-1.10.3
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/20/使用hexo + GitHub Pages搭建个人博客/" rel="prev" title="使用hexo + GitHub pages搭建自己的blog">
-                使用hexo + GitHub pages搭建自己的blog <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/07/centos7.x搭建git服务器搭建/" rel="prev" title="centos7.x搭建git服务器">
+                centos7.x搭建git服务器 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -737,7 +744,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git-是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。"><span class="nav-number">1.</span> <span class="nav-text">Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-安装依赖库和编译工具"><span class="nav-number">1.1.</span> <span class="nav-text">1.安装依赖库和编译工具</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装编译工具"><span class="nav-number">2.</span> <span class="nav-text">2.安装编译工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-下载git并安装"><span class="nav-number">3.</span> <span class="nav-text">3.下载git并安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-配置环境变量"><span class="nav-number">4.</span> <span class="nav-text">4.配置环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-创建-git-账号密码"><span class="nav-number">5.</span> <span class="nav-text">5.创建 git 账号密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-初始化-git-仓库并配置用户权限"><span class="nav-number">6.</span> <span class="nav-text">6.初始化 git 仓库并配置用户权限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-测试搭建好的Git服务"><span class="nav-number">7.</span> <span class="nav-text">7.测试搭建好的Git服务</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装前装备"><span class="nav-number">1.</span> <span class="nav-text">安装前装备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#把Nginx添加成系统服务"><span class="nav-number">3.</span> <span class="nav-text">把Nginx添加成系统服务</span></a></li></ol></div>
             
 
           </div>
